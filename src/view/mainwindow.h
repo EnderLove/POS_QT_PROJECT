@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "../model/product.h"
+#include "../controller/productcontroller.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -22,7 +25,12 @@ private slots:
 
     //void on_lineEdit_editingFinished();
 
+    void onBarcodeEntered();
+
 private:
     Ui::MainWindow *ui;
+
+    ProductModel *model;
+    ProductController *controller;
 };
 #endif // MAINWINDOW_H

@@ -6,16 +6,22 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 {
     ui->setupUi(this);
 
+    model = new ProductModel();
+    controller = new ProductController(model, this);
+
     connect(ui->horizontalSlider, SIGNAL(valueChanged(int)), ui->progressBar, SLOT(setValue(int)));
 
-    connect(ui->lineEdit, &QLineEdit::editingFinished, this, [this]()
-    {
-        ui->label->setText(ui->lineEdit->text());
-    });
+    //connect(ui->lineEdit, &QLineEdit::editingFinished, this, [this]()
+    //{
+    //    ui->label->setText(ui->lineEdit->text());
+    //});
+
+    connect(ui->lineEdit, &QLineEdit::returnPressed,this, &MainWindow::onBarcodeEntered);
 }
 
 MainWindow::~MainWindow()
 {
+    delete model;
     delete ui;
 }
 
@@ -25,8 +31,9 @@ void MainWindow::on_pushButton_clicked()
     p->show();
 }
 
-//void MainWindow::on_lineEdit_editingFinished()
-//{
-//    QString text = ui->lineEdit->text();
-//    ui->label->setText(text);
-//}
+void MainWindow::onBarcodeEntered()
+{
+    QString code = ui->lineEdit->text();
+    QString productName = controller->searchProduct(code);
+    ui->label->setText(productName);
+}
