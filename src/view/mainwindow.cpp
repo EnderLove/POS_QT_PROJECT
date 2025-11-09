@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "productwindow.h"
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow)
@@ -20,7 +21,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    ui->label->setText("");
+    productwindow *p = new productwindow();
+    p->show();
 }
 
 //void MainWindow::on_lineEdit_editingFinished()

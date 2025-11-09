@@ -10,28 +10,28 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    src/view/mainwindow.cpp \
     src/view/loginwindow.cpp \
-    src/view/productwindow.cpp \
+    src/view/mainwindow.cpp \
     src/model/product.cpp \
     src/model/databasemanager.cpp \
     src/model/sale.cpp \
     src/model/user.cpp \
     src/controller/maincontroller.cpp \
     src/controller/logincontroller.cpp \
-    src/controller/productcontroller.cpp
+    src/controller/productcontroller.cpp \
+    src/view/productwindow.cpp
 
 HEADERS += \
-    src/view/mainwindow.h \
     src/view/loginwindow.h \
-    src/view/productwindow.h \
+    src/view/mainwindow.h \
     src/model/product.h \
     src/model/databasemanager.h \
     src/model/sale.h \
     src/model/user.h \
     src/controller/maincontroller.h \
     src/controller/logincontroller.h \
-    src/controller/productcontroller.h
+    src/controller/productcontroller.h \
+    src/view/productwindow.h
 
 FORMS += \
     src/view/loginwindow.ui \
