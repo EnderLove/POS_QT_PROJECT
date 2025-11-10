@@ -1,51 +1,49 @@
-# First Level Heading
+# DOCUMENTATION MANAGMENT
 
-Paragraph.
+This file contains all the base notes used for the development of the documentations of the proyect.
 
-## Second Level Heading
-
-Paragraph.
-
-- bullet
-+ other bullet
-* another bullet
-    * child bullet
-
-1. ordered
-2. next ordered
-
-### Third Level Heading
-
-Some *italic* and **bold** text and `inline code`.
-
-An empty line starts a new paragraph.
-
-Use two spaces at the end  
-to force a line break.
-
-A horizontal ruler follows:
+### Contributors
+- Joaquin Carpio Arana (CEO & Proyect Manager)
+- Jean Franco Lazarinos Armendaris (DB Manager)
+- Leonardo Cuadros Loaiza (QSS Manager)
 
 ---
 
-Add links inline like [this link to the Qt homepage](https://www.qt.io),
-or with a reference like [this other link to the Qt homepage][1].
+# Documentation
 
-    Add code blocks with
-    four spaces at the front.
+## Top Priority
 
-> A blockquote
-> starts with >
->
-> and has the same paragraph rules as normal text.
+- MVC (Utility, architecture...)
+- Qt framework (Utility, range...)
+    * How Slots and Signals work
+    * Code architecture
+    * .ui
+    * CMake / QMake
+        + File managment
+        + Builder  
+- Language (C++, SQLite)
+- Proyect Objectives
+- Proyect Functionality
+    - Requirements
+    - Code
+- Data Base (BS)
 
-First Level Heading in Alternate Style
-======================================
+## Mid Priority
 
-Paragraph.
+- Big O notation (Search algorithms)
+- Libaries Used
+- Software Functionality
+    * Buttons
+    * Windows
+    * Connections
 
-Second Level Heading in Alternate Style
----------------------------------------
+## Low Priority
 
-Paragraph.
+- Styles managment
+    * Qss files creation
+- Commits Table
 
-[1]: https://www.qt.io
+# Presentation
+
+
+

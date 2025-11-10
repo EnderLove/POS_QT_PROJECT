@@ -1,6 +1,6 @@
-# First Level Heading
+# SOFTWARE DEVELOPMENT NOTES
 
-Paragraph.
+This file contains the notes of how the team administrated the tasks and how we organize some things.
 
 ## Second Level Heading
 
